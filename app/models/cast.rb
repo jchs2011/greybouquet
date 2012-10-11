@@ -1,3 +1,3 @@
 class Cast < ActiveRecord::Base
-  attr_accessible :description, :name
+  attr_accessible :description, :name, :likes, :dislikes, :dreams
 end

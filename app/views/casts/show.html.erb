@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
+<p>
+  <%= image_tag "#{@cast.image_tag}" %>
+</p>
 
 <p>
   <b>Name:</b>
@@ -10,6 +13,20 @@
   <%= @cast.description %>
 </p>
 
+<p>
+  <b>Likes:</b>
+  <%= @cast.likes %>
+</p>
+
+<p>
+  <b>Dislikes:</b>
+  <%= @cast.dislikes %>
+</p>
+
+<p>
+  <b>Dreams and Goals:</b>
+  <%= @cast.dreams %>
+</p>
 
 <%= link_to 'Edit', edit_cast_path(@cast) %> |
 <%= link_to 'Back', casts_path %>
