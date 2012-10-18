@@ -47,7 +47,7 @@ class CastsController < ApplicationController
         format.html { redirect_to @cast, notice: 'Cast was successfully created.' }
         format.json { render json: @cast, status: :created, location: @cast }
       else
-        format.html { render action: "new" }
+        format.html { render action: "new", notice: "Could not comply: #{@cast.errors}" }
         format.json { render json: @cast.errors, status: :unprocessable_entity }
       end
     end

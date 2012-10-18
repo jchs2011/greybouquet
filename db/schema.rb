@@ -11,23 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121018002956) do
+ActiveRecord::Schema.define(:version => 20121018011324) do
 
   create_table "casts", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
     t.text     "likes"
     t.text     "dislikes"
     t.text     "dreams"
     t.string   "image_tag"
+    t.string   "headshot_file_name"
+    t.string   "headshot_content_type"
+    t.integer  "headshot_file_size"
+    t.datetime "headshot_updated_at"
   end
 
   create_table "comics", :force => true do |t|
     t.string   "series"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "strip_file_name"
+    t.string   "strip_content_type"
+    t.integer  "strip_file_size"
+    t.datetime "strip_updated_at"
+    t.integer  "sequence"
   end
 
 end
