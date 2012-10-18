@@ -1,4 +1,6 @@
 Greybouquet::Application.routes.draw do
+  resources :comics
+
   resources :casts
 
   # The priority is based upon order of creation:
