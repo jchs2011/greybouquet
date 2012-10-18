@@ -32,6 +32,9 @@
     <%= f.text_area :dreams %>
   </div>
   <div class="field">
+    <% if @cast.headshot? %>
+      <%= image_tag @cast.headshot.url(:thumb) %>
+    <% end %>
     <%= f.file_field :headshot %>
   </div>
   <div class="actions">

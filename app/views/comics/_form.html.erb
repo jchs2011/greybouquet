@@ -16,6 +16,12 @@
     <%= f.text_field :series %>
   </div>
   <div class="field">
+    <%= f.label :sequence %><br />
+    <%= f.text_field :sequence %>
+  <div class="field">
+    <% if @comic.strip? %>
+      <%= image_tag @comic.strip.url(:medium) %>
+    <% end %>
     <%= f.file_field :strip %>
   </div>
 
