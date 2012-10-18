@@ -27,5 +27,9 @@
   <%= @cast.dreams %>
 </p>
 
-<%= link_to 'Edit', edit_cast_path(@cast) %> |
-<%= link_to 'Back', casts_path %>
+<%#<% if current_user = gerbil %>%>
+  <%#<%= link_to 'Edit', gerbil_edit_cast_path(@cast) %> |%>
+  <%#<%= link_to 'Back', gerbil_casts_path %>%>
+<%#<% else %>%>
+  <%= link_to 'Back', casts_path %>
+<%#<% end %>%>

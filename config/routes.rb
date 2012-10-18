@@ -1,4 +1,7 @@
 Greybouquet::Application.routes.draw do
+  namespace :gerbil do
+    resources :comics, :casts
+  end
   resources :comics
 
   resources :casts

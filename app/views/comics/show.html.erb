@@ -7,6 +7,9 @@
   <%= @comic.series %>
 </p>
 
-
-<%= link_to 'Edit', edit_comic_path(@comic) %> |
-<%= link_to 'Back', comics_path %>
+<%#<% if current_user == gerbil %>%>
+  <%#<%= link_to 'Edit', gerbil_edit_comic_path(@comic) %> |%>
+  <%#<%= link_to 'Back', gerbil_comic_path %>%>
+<%#<% else %>%>
+  <%= link_to 'Back', comics_path %>
+<%#<% end %>%>
