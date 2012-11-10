@@ -1,6 +1,10 @@
 Greybouquet::Application.routes.draw do
+
+  root :to => 'comics#show'
+
   namespace :gerbil do
     resources :comics, :casts
+    root :to => 'comics#index'
   end
   resources :comics
 
