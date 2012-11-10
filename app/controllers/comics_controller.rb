@@ -13,7 +13,8 @@ class ComicsController < ApplicationController
   # GET /comics/1
   # GET /comics/1.json
   def show
-    @comic = Comic.find(params[:id])
+    @comic = Comic.find_by_id(params[:id]) || 
+      Comic.gags.latest
 
     respond_to do |format|
       format.html # show.html.erb
