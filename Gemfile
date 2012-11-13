@@ -13,6 +13,15 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :development do
+  gem 'guard'
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+end
+
 group :production do
   gem 'pg'
 end
