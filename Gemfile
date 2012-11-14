@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'haml-rails'
 gem "paperclip", "~> 3.0"
+gem 'debugger'
 
 group :development, :test do
   gem "rspec-rails", "~> 2.0"
