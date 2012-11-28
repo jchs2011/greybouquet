@@ -1,0 +1,5 @@
+%h1 Cast
+%ul.casts
+  - @casts.each do |cast|
+    %li= image_tag cast.headshot.url(:thumb)
+    %li= cast.name

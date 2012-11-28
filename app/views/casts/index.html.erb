@@ -1,10 +1,8 @@
-<h1>Listing casts</h1>
+<h1>Cast</h1>
 
-<table>
 <% @casts.each do |cast| %>
-  <tr>
-    <td><%= image_tag cast.headshot.url(:thumb) %>
-    <td><%= cast.name %></td>
-  </tr>
+  <ul>
+    <li><%= image_tag cast.headshot.url(:thumb) %></li>
+    <li><%= cast.name %></li>
+  </ul>
 <% end %>
-</table>
